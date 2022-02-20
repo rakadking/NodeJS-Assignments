@@ -7,7 +7,6 @@ function getNameFromCommandLine() {
 }
 
 function getNameFromEnv() {
-    //write your code here
     return process.env.name;
 }
 
@@ -18,8 +17,6 @@ function getNameFromReadLine() {
         output: process.stdout
     })
 
-    readline.question('', (name) => name)
-    readline.close();
 }
 
 
