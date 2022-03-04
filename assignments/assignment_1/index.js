@@ -16,6 +16,9 @@ function getNameFromReadLine() {
         input: process.stdin,
         output: process.stdout
     })
+   readline.question('', (input) => {input,
+    readline.close()})    
+}
 
 }
 
