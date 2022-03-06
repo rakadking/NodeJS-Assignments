@@ -1,17 +1,29 @@
+
 function getNameFromCommandLine() {
     // Write you code here, name should be taken as args in process.argv
+    const name = process.argv[5]
+    return name;
+
 }
 
 function getNameFromEnv() {
-    // Write your code here
+    return process.env.name;
 }
 
 function getNameFromReadLine() {
-    // Write your code here
+    const readline = require('readline');
+    readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    })
+
 }
+
+
 
 module.exports = {
     getNameFromCommandLine,
     getNameFromEnv,
     getNameFromReadLine
 }
+
