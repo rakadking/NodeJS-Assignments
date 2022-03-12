@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <table style ="width: 100%">
+            <caption>Users Data</caption>
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>Profession</th>
+                </tr>
+                    <% users.forEach(user => { %>
+                        <tr>
+                            <td><%= user.name%></td>
+                            <td><%= user.age%></td>
+                            <td><%= user.email %></td>
+                            <td><%= user.city%></td>
+                            <td><%= user.profession %></td>
+                        </tr>
+                    <% }) %>
+                
+            </tbody>
+        </table>
+        <a href ="/form"><button>Add User</button></a>
+    </body>
+</html>
